@@ -11,6 +11,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'figaro'
 gem 'haml-rails'
 gem 'simple_form', '>= 3.0.0.rc'
+gem 'unicorn'
+gem 'puma'
 group :development do
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'guard-bundler'
@@ -35,7 +37,6 @@ group :development, :test do
   gem 'chefspec', '~> 2.0.0'
 end
 group :production do
-  gem 'unicorn'
   gem 'execjs'
 end
 group :test do

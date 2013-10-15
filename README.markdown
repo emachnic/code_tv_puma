@@ -1,34 +1,24 @@
-# CodeTV Nginx
+# Code TV Puma
 
-This is the Code School Journal application used in the Nginx series of CodeTV.
+This is the Code School Journal application used in the Puma episode of Code TV.
 
 ## Setup
 
 Clone the repository:
 
-		$ git clone https://github.com/emachnic/codetv_nginx.git
+		$ git clone https://github.com/emachnic/code_tv_puma.git
 
 Go into the directory and run the following:
 
-		$ cd codetv_nginx
+		$ cd code_tv_puma
 		$ bundle install
 		$ rake db:setup
 
 After the database is created and seeded, run the server:
 
-		$ rails server
+		$ puma
 
-In your browser, go to http://localhost:3000 and you should see the `Entries#index`
+In your browser, go to http://localhost:9292 and you should see the `Entries#index`
 page
 
-## Working with Vagrant
-
-Included in the repository is a Vagrantfile for an Ubuntu 12.10 base box.
-To set up the Vagrant box, follow these instructions:
-
-1. Install VirtualBox from the [site](https://www.virtualbox.org/wiki/Downloads)
-2. Install Vagrant according to the [instructions](http://docs.vagrantup.com/v2/installation/index.html)
-3. Run `vagrant up` to download the box and boot up the machine
-
-Once the virtual machine is running, you can SSH into it by running `vagrant ssh`
  

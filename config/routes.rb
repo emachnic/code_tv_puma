@@ -1,7 +1,7 @@
 CodetvNginx::Application.routes.draw do
   resources :entries
 
-  root :to => "home#index"
+  root :to => "entries#index"
 
   ### Begin RailsThemes basic generated routes ###
 
